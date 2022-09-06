@@ -32,11 +32,7 @@ h1 {
 .text p {
   font-size: 13px;
   line-height: 20px;
-  color: #6e8098;
-}
-
-.hidden {
-  display: none;
+  color: #6E8098;
 }
 
 .info {
@@ -62,7 +58,7 @@ h1 {
 }
 
 .author {
-  display:grid;
+  display: grid;
   grid-template-columns: 40px calc(100% - 32px);
   grid-template-areas:
   "avatar name"
@@ -93,11 +89,11 @@ h2 {
   color: #9DAEC2;
 }
 
-.circle {
+button {
   grid-area: more;
   width: 32px;
   height: 32px;
-  background-color: #ecf2f8;
+  background-color: #ECF2F8;
 
   display: flex;
   justify-content: center;
@@ -105,9 +101,9 @@ h2 {
   border-radius: 50%;
 }
 
-.circle ion-icon {
+button ion-icon {
   font-size: 15px;
-  color: #6e8098;
+  color: #6E8098;
 }
 
 .social {
@@ -130,9 +126,98 @@ h2 {
 }
 
 .active button {
-  background-color: #6e8098;
+  background-color: #6E8098;
 }
 
 .active button ion-icon {
-  color: #fff;
+  color: #FFF;
+}
+
+@media (min-width: 730px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 730px;
+    max-width: unset;
+    height: 280px;
+    margin: 32px 0;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 285px 365px;
+    grid-template-areas:
+      "image ."
+      "image .";
+
+    gap: 20px 40px;
+    position: relative;
+    overflow: unset;
+  }
+
+  .card > img {
+    grid-area: image;
+    width: 285px;
+    height: 280px;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .text {
+    margin: 32px 0 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .info.active .author {
+    display: inherit;
+  }
+
+  .info {
+    width: 350px;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  .info.active {
+    background-color: #FFF;
+  }
+
+  button {
+    cursor: pointer;
+    transition: all 500ms;
+  }
+
+  .social {
+    width: 248px;
+    height: 55px;
+    box-shadow: 0 10px 10px rgba(201, 213, 225, 0.503415);
+    border-radius: 10px;
+
+    justify-content: center;
+    background-color: #48556A;
+    position: absolute;
+    bottom: 84px;
+    right: -68px;
+  }
+
+  .social:before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 99px;
+    width: 0;
+    border-top: 12px solid #48556A;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+  }
 }
