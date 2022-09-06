@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>Frontend Mentor | Article preview component</title>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <main class="card">
+      <img src="./images/drawers.jpg" alt="drawers">
+      <section class="text">
 
-  Michelle Appleton
-  28 Jun 2020
+        <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p>Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+      </section>
+      <section class="info">
+        <div class="author">
+          <img src="./images/avatar-michelle.jpg" alt="Michelle">
+          <h2>Michelle Appleton</h2>
+          <p>28 Jun 2020</p>
+        </div>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="social">
+          <p>Share</p>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-pinterest"></ion-icon>
+        </div>
+        <div class="circle">
+          <ion-icon name="arrow-redo"></ion-icon>
+        </div>
+
+      </section>
+      </main>
+
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
